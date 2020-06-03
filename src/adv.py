@@ -19,10 +19,13 @@ to north. The smell of gold permeates the air."""),
     'treasure': Room("Treasure Chamber", """You've found the long-lost treasure
 chamber! Sadly, it has already been completely emptied by
 earlier adventurers. The only exit is to the south."""),
+
+    'Dome': Room("Dome", """Put more exciting text here""")
 }
 
 
 # Link rooms together
+# to-do Link added rooms together!
 
 room['outside'].n_to = room['foyer']
 room['foyer'].s_to = room['outside']
@@ -35,7 +38,7 @@ room['treasure'].s_to = room['narrow']
 
 #
 # Main
-#
+# 
 
 # Make a new player object that is currently in the 'outside' room.
 
